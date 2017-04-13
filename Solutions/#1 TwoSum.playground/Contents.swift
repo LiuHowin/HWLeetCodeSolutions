@@ -1,5 +1,43 @@
-//: Playground - noun: a place where people can play
 
+/**
+ 1. Two Sum Add to List
+ Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+ You may assume that each input would have exactly one solution, and you may not use the same element twice.
+*/
+
+//class Solution { // 错误答案
+//    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+//        var preValue = 0
+//        var indexs: [Int] = Array()
+//        for (index,value) in nums.enumerated() {
+//            if index == 0 {
+//                preValue = value
+//                indexs.append(index)
+//            } else {
+//                if preValue + value == target {
+//                    indexs.append(index)
+//                } else if preValue + value > target {
+//                    if preValue < value {
+//                        indexs.removeAll()
+//                        indexs.append(index)
+//                        preValue = value
+//                    }
+//                } else if preValue + value < target {
+//                    if preValue > value {
+//                        indexs.removeAll()
+//                        indexs.append(index)
+//                        preValue = value
+//                    }
+//                }
+//            }
+//        }
+//        
+//        return indexs
+//    }
+//}
+
+// 使用hash， 先直接根据value在hash里面找，找不到就先保存，找到就返回。
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var hash: [Int : Int] = [:]
