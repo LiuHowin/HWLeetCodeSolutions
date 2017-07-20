@@ -1,3 +1,4 @@
+//: https://leetcode.com/problems/two-sum/#/description
 
 /**
  1. Two Sum Add to List
@@ -37,6 +38,7 @@
 //    }
 //}
 
+// 别人的答案
 // 使用hash， 先直接根据value在hash里面找，找不到就先保存，找到就返回。
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
@@ -52,6 +54,7 @@ class Solution {
             
             hash[j] = i
         }
+        
         return resArray;
     }
 }

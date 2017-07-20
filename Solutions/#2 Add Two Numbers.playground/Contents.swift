@@ -1,7 +1,6 @@
+//: https://leetcode.com/problems/add-two-numbers/#/description
 
 /**
- https://leetcode.com/problems/add-two-numbers/#/description
- 
  You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  
  You may assume the two numbers do not contain any leading zero, except the number 0 itself.
@@ -45,8 +44,8 @@ class Solution {
         var n1: ListNode? = l1
         var n2: ListNode? = l2
         
-        var nr1: ListNode? = ListNode(0) // 最开始的头节点
-        var nr: ListNode? = nr1 // 指向头节点指针: 这里这样做为了头节点连上第一个值
+        let nr1: ListNode? = ListNode(0) // 最开始的头节点
+        var nr: ListNode? = nr1 // 指针传递: 这里这样做为了头节点连上第一个值
         
         var sum: Int = 0
         
@@ -72,7 +71,7 @@ class Solution {
             
         } while (n1 != nil || n2 != nil)
        
-        if sum / 10 == 1 { // 最后导出结果为0且不是为0开头时的处理，虽然next节点都为空，但是sum还是剩了1出来
+        if sum / 10 == 1 { // 最后导出结果为0且不是为0开头时，虽然next节点都为空，但是sum还是剩了1出来
             nr?.next = ListNode(1)
         }
         
