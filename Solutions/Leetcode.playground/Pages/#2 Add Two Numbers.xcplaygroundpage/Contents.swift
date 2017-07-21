@@ -27,7 +27,7 @@
  一开始没有读懂题，导致没思路和思路错误。。。
  最后答案参照：https://discuss.leetcode.com/topic/799/is-this-algorithm-optimal-or-what
  然后说说个人的不完全理解，首先是链，一开始我一直以为链是需要自己提供算法的，算出2-4-3的，然后没想到就是自己设置下一个节点就是ListNote(4)，- -!。然后是两个链的相加，2 + 5 = 7; 6 + 4 = 10; 3 + 4 = 8?;明显10和8需要处理，然后注意最后一个提示就是，只有0自己才会导出0。需要得出10 -> 0的转变，还有3 + 4到8之间1的差值，还有就是非0导入时，应该怎么处理。
-*/
+ */
 
 public class ListNode {
     public var val: Int
@@ -40,7 +40,7 @@ public class ListNode {
 
 class Solution {
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-       
+        
         var n1: ListNode? = l1
         var n2: ListNode? = l2
         
@@ -70,7 +70,7 @@ class Solution {
             nr = nr?.next
             
         } while (n1 != nil || n2 != nil)
-       
+        
         if sum / 10 == 1 { // 最后导出结果为0且不是为0开头时，虽然next节点都为空，但是sum还是剩了1出来
             nr?.next = ListNode(1)
         }
