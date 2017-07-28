@@ -49,7 +49,7 @@ class Solution {
         
         var sum: Int = 0
         
-        repeat {
+        while (n1 != nil || n2 != nil) {
             sum /= 10 // 确保不大于10，而且解决 3 + 4 = 8 之间缺1的问题
             
             if n1 != nil {
@@ -69,7 +69,7 @@ class Solution {
             nr?.next = ListNode(sum % 10)
             nr = nr?.next
             
-        } while (n1 != nil || n2 != nil)
+        }
         
         if sum / 10 == 1 { // 最后导出结果为0且不是为0开头时，虽然next节点都为空，但是sum还是剩了1出来
             nr?.next = ListNode(1)
