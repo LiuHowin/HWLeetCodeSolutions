@@ -1,6 +1,5 @@
-//: https://leetcode.com/problems/longest-palindromic-substring/#/description
-
-/**
+//: [Previous](@previous)
+/*:
  Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
  
  Example:
@@ -16,6 +15,7 @@
  
  Output: "bb"
  */
+//: [Problem link](https://leetcode.com/problems/longest-palindromic-substring/#/description)
 
 // 回文(Palindrome)字串：正反读都一样
 class Solution {
@@ -104,3 +104,5 @@ class Solution {
 Solution().longestPalindrome("abcdasdfghjkldcba")
 
 //Solution1().longestPalindrome("abcdasdfghjkldcba") // aaabaa
+
+//: [Next](@next)

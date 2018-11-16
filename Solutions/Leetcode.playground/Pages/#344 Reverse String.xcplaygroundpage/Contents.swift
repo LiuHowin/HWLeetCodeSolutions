@@ -1,7 +1,8 @@
-/**
+//: [Previous](@Previous)
+/*:
  Write a function that takes a string as input and returns the string reversed.
  */
-
+//: [Problem link](https://leetcode.com/problems/reverse-string/description/)
 
 // swift中可将Sting拆分成character
 class Solution {
@@ -13,3 +14,5 @@ class Solution {
         return reverseString
     }
 }
+
+//: [Next](@next)

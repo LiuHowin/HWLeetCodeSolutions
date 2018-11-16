@@ -1,6 +1,8 @@
-//: https://leetcode.com/problems/add-two-numbers/#/description
-
-/**
+//: [Previous](@previous)
+//:
+//:
+//: ## Add Two Numbers
+/*:
  You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  
  You may assume the two numbers do not contain any leading zero, except the number 0 itself.
@@ -10,25 +12,25 @@
  
  Subscribe to see which companies asked this question.
  */
+//: [Problem link](https://leetcode.com/problems/add-two-numbers/description)
 
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     public var val: Int
- *     public var next: ListNode?
- *     public init(_ val: Int) {
- *         self.val = val
- *         self.next = nil
- *     }
- * }
+  Definition for singly-linked list.
+  public class ListNode {
+    public var val: Int
+    public var next: ListNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.next = nil
+    }
+ }
  */
 
 /**
  一开始没有读懂题，导致没思路和思路错误。。。
- 最后答案参照：https://discuss.leetcode.com/topic/799/is-this-algorithm-optimal-or-what
+ 最后答案参照: https://discuss.leetcode.com/topic/799/is-this-algorithm-optimal-or-what
  然后说说个人的不完全理解，首先是链，一开始我一直以为链是需要自己提供算法的，算出2-4-3的，然后没想到就是自己设置下一个节点就是ListNote(4)，- -!。然后是两个链的相加，2 + 5 = 7; 6 + 4 = 10; 3 + 4 = 8?;明显10和8需要处理，然后注意最后一个提示就是，只有0自己才会导出0。需要得出10 -> 0的转变，还有3 + 4到8之间1的差值，还有就是非0导入时，应该怎么处理。
  */
-
 public class ListNode {
     public var val: Int
     public var next: ListNode?
@@ -96,4 +98,4 @@ _  = Solution().addTwoNumbers(n1, n4)
 
 
 
-
+//: [Next](@next)

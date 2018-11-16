@@ -1,13 +1,14 @@
-//: https://leetcode.com/problems/two-sum/#/description
+//: [Previous](@previous)
+//:
+//:
+//: ## Two Sum Add to List
+//: Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+//: You may assume that each input would have exactly one solution, and you may not use the same element twice.
+//:
+//: [Problem link](https://leetcode.com/problems/two-sum/#/description)
 
-/**
- 1. Two Sum Add to List
- Given an array of integers, return indices of the two numbers such that they add up to a specific target.
- 
- You may assume that each input would have exactly one solution, and you may not use the same element twice.
- */
-
-//class Solution { // 错误答案
+// My wrong answer:
+//class Solution {
 //    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 //        var preValue = 0
 //        var indexs: [Int] = Array()
@@ -59,3 +60,5 @@ class Solution {
     }
 }
 
+
+//: [Next](@next)
