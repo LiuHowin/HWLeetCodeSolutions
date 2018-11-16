@@ -23,7 +23,7 @@ import Foundation
 class Solution {
     func findComplement(_ num: Int) -> Int {
         let str = String(num, radix: 2)
-        let count = str.characters.count
+        let count = str.count
         var sum: Double = 0.0
         for i in 0 ..< count {
             sum += pow(2, Double(i)) // pow是Foundation框架里的 2^i -> 制造 1111

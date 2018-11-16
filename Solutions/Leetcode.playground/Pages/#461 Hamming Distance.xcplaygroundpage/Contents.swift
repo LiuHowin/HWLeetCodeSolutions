@@ -26,7 +26,7 @@
 class Solution {
     func hammingDistance(_ x: Int, _ y: Int) -> Int {
         let i = x ^ y
-        return String(i, radix:2).characters.filter{ $0 == "1" }.count
+        return String(i, radix:2).filter{ $0 == "1" }.count
     }
 }
 

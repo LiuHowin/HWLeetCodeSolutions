@@ -4,11 +4,10 @@
  */
 //: [Problem link](https://leetcode.com/problems/reverse-string/description/)
 
-// swift中可将Sting拆分成character
 class Solution {
     func reverseString(_ s: String) -> String {
         var reverseString = ""
-        for character in s.characters {
+        for (_, character) in s.enumerated() {
             reverseString.insert(character, at: reverseString.startIndex)
         }
         return reverseString

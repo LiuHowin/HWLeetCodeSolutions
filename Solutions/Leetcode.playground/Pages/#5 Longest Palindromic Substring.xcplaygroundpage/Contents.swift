@@ -28,7 +28,7 @@ class Solution {
         //        var rCharasctersArray = [Character](reverseString.characters)
         
         // 将字符串字符组成数组
-        let charasctersArray = [Character](s.characters)
+        let charasctersArray = [Character](s)
         
         var start = 0, end = 0
         for (i, _) in charasctersArray.enumerated() {
@@ -60,46 +60,6 @@ class Solution {
         return r - l - 1
     }
 }
-
-// 我的垃圾解法
-//class Solution1 {
-//    func longestPalindrome(_ s: String) -> String {
-//        var rS = ""
-//
-//        for character in s.characters {
-//            rS.insert(character, at: rS.startIndex)
-//        }
-//
-//        let sArray = [Character](s.characters)
-//        let rSArray = [Character](rS.characters)
-//
-//        var start = 0
-//        var end = 0
-//
-//        for (i, val) in sArray.enumerated() {
-//
-//            for (y, rVal) in rSArray.enumerated() {
-//                var len = 0
-//                if rVal != val {
-//                    continue
-//                }
-//
-//                var index = y
-//                while len + i < sArray.count && index < sArray.count && sArray[len + i] == rSArray[index]{
-//                    len += 1
-//                    index += 1
-//                }
-//
-//                if end - start < len && (sArray.count - index) == i {
-//                    start = i
-//                    end = len + i
-//                }
-//            }
-//        }
-//
-//        return String(sArray[start..<end])
-//    }
-//}
 
 Solution().longestPalindrome("abcdasdfghjkldcba")
 

@@ -15,14 +15,14 @@
 // 通过字符的characters集合，和是否为子集合的判断(无序集合)
 class Solution {
     func findWords(_ words: [String]) -> [String] {
-        let keyboardStr1: Set = Set(Array("qwertyuiop".characters)) //
-        let keyboardStr2: Set = Set(Array("asdfghjkl".characters))
-        let keyboardStr3: Set = Set(Array("zxcvbnm".characters))
+        let keyboardStr1: Set = Set("qwertyuiop") //
+        let keyboardStr2: Set = Set("asdfghjkl")
+        let keyboardStr3: Set = Set("zxcvbnm")
         
         var results: [String?] = []
         
         for word in words {
-            let set: Set = Set(Array(word.lowercased().characters))
+            let set: Set = Set(word.lowercased())
             
             if set.isSubset(of: keyboardStr1) || set.isSubset(of: keyboardStr2) || set.isSubset(of: keyboardStr3) {
                 results.append(word)

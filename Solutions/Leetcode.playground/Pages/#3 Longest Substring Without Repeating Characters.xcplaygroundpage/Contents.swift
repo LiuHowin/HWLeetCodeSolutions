@@ -24,13 +24,12 @@ class Solution {
             return 0
         }
         
-        let wordsArray = s.characters
         var hash: [Character: Int] = [:]
         
         var max: Int = 0
         var j: Int = 0
         
-        for (i, v) in wordsArray.enumerated() {
+        for (i, v) in s.enumerated() {
             if let index = hash[v] {
                 j = [j, index + 1].max()!
             }
