@@ -1,5 +1,6 @@
-//: [Previous](@Previous)
-/*:
+//: ## Hamming Distance
+//: [Problem link](https://leetcode.com/problems/hamming-distance/description/)
+/*
  The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
  
  Given two integers x and y, calculate the Hamming distance.
@@ -20,7 +21,6 @@
  
  The above arrows point to positions where the corresponding bits are different.
  */
-//: [Problem link](https://leetcode.com/problems/hamming-distance/description/)
 
 // 先异或，然后换为2进制，取到1(不同)的个数
 class Solution {
@@ -33,4 +33,4 @@ class Solution {
 Solution().hammingDistance(1, 4)
 
 
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)

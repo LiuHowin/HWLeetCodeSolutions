@@ -1,5 +1,6 @@
-//: [Previous](@Previous)
-/*:
+//: ## FizzBuzz
+//: [Problem link](https://leetcode.com/problems/fizz-buzz/description/)
+/*
  Write a program that outputs the string representation of numbers from 1 to n.
  
  But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
@@ -27,7 +28,6 @@
  "FizzBuzz"
  ]
  */
-//: [Problem link](https://leetcode.com/problems/fizz-buzz/description/)
 
 
 // 普通解法
@@ -81,4 +81,4 @@ class Solution1 {
 Solution1().fizzBuzz(30)
 
 
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)

@@ -7,6 +7,17 @@
         <page name='#3 Longest Substring Without Repeating Characters'/>
         <page name='#4 Median of Two Sorted Arrays'/>
         <page name='#5 Longest Palindromic Substring'/>
+        <page name='#8 String to Integer (atoi)'/>
+        <page name='#14 Longest Common Prefix '/>
+        <page name='#19 Remove Nth Node From End of List'/>
+        <page name='#21 Merge Two Sorted Lists'/>
+        <page name='#28 Implement strStr()'/>
+        <page name='#38 Count and Say'/>
+        <page name='#48 Rotate Image'/>
+        <page name='#125  Valid Palindrome'/>
+        <page name='#206 Reverse Linked List'/>
+        <page name='#234 Palindrome Linked List'/>
+        <page name='#237 Delete Node in a Linked List'/>
         <page name='#344 Reverse String'/>
         <page name='#412 FizzBuzz'/>
         <page name='#461 Hamming Distance'/>

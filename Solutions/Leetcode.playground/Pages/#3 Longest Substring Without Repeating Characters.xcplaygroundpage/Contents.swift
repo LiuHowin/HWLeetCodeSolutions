@@ -1,6 +1,6 @@
-//: [Previous](@previous)
 //: ## Longest Substring Without Repeating Charaters
-/*:
+//: [Problem link](https://leetcode.com/problems/longest-substring-without-repeating-characters/#/description)
+/*
  Given a string, find the length of the longest substring without repeating characters.
  
  Examples:
@@ -11,7 +11,6 @@
  
  Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
  */
-//: [Problem link](https://leetcode.com/problems/longest-substring-without-repeating-characters/#/description)
 
 /**
  first readed：1. 不重复的字符个数；2. 而且是最长连接在一起的字符
@@ -44,4 +43,4 @@ class Solution {
 
 Solution().lengthOfLongestSubstring("pwwkew")
 
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)

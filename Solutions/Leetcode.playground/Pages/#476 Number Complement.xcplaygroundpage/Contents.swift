@@ -1,5 +1,6 @@
-//: [Previous](@Previous)
-/*:
+//: ## Number Complement
+//: [Problem link](https://leetcode.com/problems/number-complement/description/)
+/*
  Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
  
  Note:
@@ -16,7 +17,6 @@
  Output: 0
  Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
  */
-//: [Problem link](https://leetcode.com/problems/number-complement/description/)
 
 import Foundation
 
@@ -36,4 +36,4 @@ class Solution {
 Solution().findComplement(9)
 
 
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)

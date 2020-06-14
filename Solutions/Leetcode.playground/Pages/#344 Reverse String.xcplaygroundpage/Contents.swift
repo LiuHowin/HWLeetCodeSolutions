@@ -1,8 +1,8 @@
-//: [Previous](@Previous)
-/*:
+//: ## Reverse String
+//: [Problem link](https://leetcode.com/problems/reverse-string/description/)
+/*
  Write a function that takes a string as input and returns the string reversed.
  */
-//: [Problem link](https://leetcode.com/problems/reverse-string/description/)
 
 class Solution {
     func reverseString(_ s: String) -> String {
@@ -14,4 +14,4 @@ class Solution {
     }
 }
 
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
