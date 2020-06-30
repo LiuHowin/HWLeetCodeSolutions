@@ -52,6 +52,19 @@ class Solution {
         
         return p
     }
+    
+    func reverseList12(_ head: ListNode?) -> ListNode? {
+        var rev: ListNode? = nil
+        var next = head
+        while next != nil {
+            let temp = next?.next
+            next?.next = rev
+            
+            rev = next
+            next = temp
+        }
+        return rev
+    }
 }
 
 let five = ListNode(5)

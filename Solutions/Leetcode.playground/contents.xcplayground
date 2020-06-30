@@ -14,7 +14,11 @@
         <page name='#28 Implement strStr()'/>
         <page name='#38 Count and Say'/>
         <page name='#48 Rotate Image'/>
+        <page name='#98 Validate Binary Search Tree'/>
+        <page name='#101 Symmetric Tree'/>
+        <page name='#104 Maximum Depth of Binary Tree'/>
         <page name='#125  Valid Palindrome'/>
+        <page name='#141 Linked List Cycle'/>
         <page name='#206 Reverse Linked List'/>
         <page name='#234 Palindrome Linked List'/>
         <page name='#237 Delete Node in a Linked List'/>
