@@ -61,13 +61,34 @@ class Solution {
             } else {
                 return false
             }
-        }
-        
-        if node1 == nil, node2 == nil {
+        } else if node1 == nil, node2 == nil {
             return true
         } else {
             return false
         }
+    }
+    
+    func isSymmetric1(_ root: TreeNode?) -> Bool {
+        if let root = root {
+            var array = [TreeNode?]()
+            array.append(root.left)
+            array.append(root.right)
+            
+            while !array.isEmpty {
+                let t1 = array.popLast()
+                let t2 = array.popLast()
+                
+                if let _ = t1, let _ = t2 {
+                    
+                } else if t1 == nil, t2 == nil {
+                    
+                } else {
+                    
+                }
+            }
+        }
+        
+        return true
     }
 }
 
